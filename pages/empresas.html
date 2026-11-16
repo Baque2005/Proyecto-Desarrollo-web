@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Empresas aliadas y herramientas para conectar con talento universitario.">
+  <title>Empresas | Conecta U</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/app.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header"><a class="brand" href="../index.html"><img class="brand-logo"
+      src="../assets/Logo/UGLOGO.png" alt=""><span>Bolsa de empleo</span></a><button class="menu-toggle"
+      aria-label="Abrir menú" aria-expanded="false"><i class="hgi-stroke hgi-menu-01" aria-hidden="true"></i></button>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a
+        href="vacantes.html">Explorar empleos</a><a class="active" href="empresas.html">Empresas</a><a
+        href="postulaciones.html">Mis postulaciones</a></nav>
+    <div class="header-actions"><a class="button button-quiet" href="auth/login.html">Iniciar sesión</a><a
+        class="button button-primary button-small" href="auth/registro.html">Crear cuenta <i
+          class="hgi-stroke hgi-user-add-01" aria-hidden="true"></i></a></div>
+  </header>
+  <main class="page-shell">
+    <div class="page-container">
+      <div class="breadcrumbs"><a href="../index.html">Inicio</a><span>/</span><span>Empresas</span></div>
+      <div class="page-title-row">
+        <div>
+          <div class="eyebrow eyebrow-muted">ALIADOS QUE IMPULSAN CARRERAS</div>
+          <h1>Empresas y perfiles</h1>
+          <p>Conoce a las organizaciones y gestiona su información.</p>
+        </div><button class="button button-primary" type="button" data-open-company-form>＋ Registrar empresa</button>
+      </div>
+      <div class="dashboard-layout">
+        <aside class="sidebar" aria-label="Menú empresarial">
+          <div class="sidebar-label">GESTIÓN</div><a href="empresas.html" class="active"><span><i
+                class="hgi-stroke hgi-building-01" aria-hidden="true"></i></span> Empresas y perfiles</a><a
+            href="vacantes.html"><span><i class="hgi-stroke hgi-briefcase-01" aria-hidden="true"></i></span>
+            Gestionar vacantes</a><a href="postulaciones.html"><span><i class="hgi-stroke hgi-file-02"
+                aria-hidden="true"></i></span> Postulaciones</a>
+          <div class="sidebar-label">CUENTA</div><a href="perfil.html"><span><i class="hgi-stroke hgi-user"
+                aria-hidden="true"></i></span> Mi perfil</a><a href="admin.html"><span><i
+                class="hgi-stroke hgi-dashboard-square-01" aria-hidden="true"></i></span> Administración</a>
+        </aside>
+        <div>
+          <div class="notice info">Registra, consulta, actualiza o elimina perfiles de empresas. Los cambios se
+            conservan localmente para esta demostración.</div>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Empresas aliadas</h2>
+                <p data-company-count>Organizaciones registradas en Conecta U.</p>
+              </div><input class="input-control" style="max-width:220px" type="search" placeholder="Buscar empresa..."
+                aria-label="Buscar empresa" data-company-search>
+            </div>
+            <div class="company-card-grid" data-company-cards></div>
+          </section>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Publica y encuentra talento</h2>
+                <p>Administra ofertas y revisa el avance del proceso.</p>
+              </div>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card"><span>Vacantes activas</span><strong data-active-jobs-count>0</strong></div>
+              <div class="stat-card"><span>Postulaciones recibidas</span><strong data-all-applications-count>0</strong>
+              </div>
+              <div class="stat-card"><span>Perfiles empresariales</span><strong data-companies-count>0</strong></div>
+            </div><a class="button button-primary" href="vacantes.html">Ir a gestión de vacantes <i
+                class="hgi-stroke hgi-arrow-right-01" aria-hidden="true"></i></a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="brand" href="../index.html"><img class="brand-logo"
+      src="../assets/Logo/UGLOGO.png" alt=""><span>Bolsa de empleo</span></a>
+    <p>Oportunidades para estudiantes y graduados.</p>
+    <div><a href="vacantes.html">Empleos</a><a href="postulaciones.html">Postulaciones</a><a
+        href="auth/login.html">Acceso</a></div><small>© 2026 Universidad de Guayaquil · Prototipo académico</small>
+  </footer>
+</body>
+
+</html>
